@@ -1,0 +1,14 @@
+@use "abstracts/index" as *;
+@use "base/index" as *;
+@use "components/index" as *;
+@use "layout/index" as *;
+@use "pages/index" as *;
+
+body {
+  color: white;
+  background-color: black;
+}
+.socials__icon {
+  width: 10px;
+  height: 10px;
+}

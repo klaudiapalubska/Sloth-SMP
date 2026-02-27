@@ -1,0 +1,23 @@
+@use "../abstracts/index" as a;
+
+.home-page {
+  height: 100%;
+  display: flex;
+  &__image {
+    & img {
+      width: 45vw;
+    }
+  }
+  &__info {
+    margin-left: a.$margin-web-gap;
+    & p {
+      margin-bottom: 2rem;
+    }
+    & h1 {
+      margin-bottom: 1rem;
+    }
+  }
+  &__btn {
+    margin-left: 1rem;
+  }
+}

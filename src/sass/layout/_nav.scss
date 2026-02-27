@@ -1,0 +1,54 @@
+@use "../abstracts/index" as a;
+
+.nav {
+  background-color: a.$primary-color-2;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem a.$page-nav-padding;
+
+  &__menu {
+    display: flex;
+  }
+  &__logo {
+    @include a.center-flex;
+    width: 15rem;
+    height: 6rem;
+    &-image {
+      width: 15rem;
+      height: 15rem;
+      &:hover {
+        cursor: pointer;
+        animation: bounceScaleLogo 0.5s ease-in-out forwards;
+      }
+      &:active {
+        animation: clickEffect 0.3s ease;
+      }
+    }
+  }
+  &__links {
+    @include a.center-flex;
+    font-family: a.$primary-font;
+    font-weight: a.$font-weight-bold;
+    font-size: 1.125rem;
+  }
+  &__item {
+    margin: 0 1rem;
+    padding-bottom: 0.25rem;
+    &:hover {
+      cursor: pointer;
+      color: a.$color-accent;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    &:active {
+      animation: clickEffect 0.3s ease;
+    }
+  }
+  &__socials {
+    @include a.center-flex;
+    &-item {
+      margin: 0 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use "../abstracts/index" as a;
+
+.socials {
+  &__item {
+  }
+  &__link {
+  }
+  &__icon {
+    width: auto;
+    height: auto;
+    &:hover {
+      cursor: pointer;
+      animation: bounceScale 0.5s ease-in-out forwards;
+    }
+    &:active {
+      animation: clickEffect 0.3s ease;
+    }
+  }
+  & img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

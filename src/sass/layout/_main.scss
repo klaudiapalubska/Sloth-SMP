@@ -1,0 +1,6 @@
+@use "../abstracts/index" as a;
+
+section {
+  background-color: a.$primary-color;
+  padding: a.$page-padding-horizontal a.$page-padding-top;
+}

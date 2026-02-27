@@ -1,0 +1,23 @@
+@use "variables" as a;
+
+.txt {
+  &--large-green {
+    font-size: 3rem;
+    font-family: a.$primary-font;
+    color: a.$color-accent;
+    text-shadow: 0 0 0.625rem a.$color-accent;
+  }
+  &--large-white {
+    font-size: 1.5rem;
+    font-family: a.$primary-font;
+  }
+  &--white {
+    font-family: a.$primary-font;
+  }
+  &--green {
+    font-size: 1.2rem;
+    font-family: a.$primary-font;
+    color: a.$color-accent;
+    font-weight: 700;
+  }
+}
