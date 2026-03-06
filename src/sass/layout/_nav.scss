@@ -7,6 +7,12 @@
   display: flex;
   justify-content: space-between;
   padding: 0.25rem a.$page-nav-padding;
+  @include a.responsive(a.$third-breakpoint) {
+    padding: 0.25rem a.$page-nav-padding-mobile;
+  }
+  @include a.responsive(a.$nav-fix-breakpoint-1) {
+    padding: 0.25rem 0;
+  }
 
   &__menu {
     display: flex;
@@ -15,15 +21,41 @@
     @include a.center-flex;
     width: 15rem;
     height: 6rem;
+    @include a.responsive(a.$nav-fix-breakpoint-2) {
+      margin-left: -1rem;
+    }
+    @include a.responsive(a.$fourth-breakpoint) {
+      margin-left: -3.5rem;
+    }
+
     &-image {
       width: 15rem;
       height: 15rem;
-      &:hover {
-        cursor: pointer;
-        animation: bounceScaleLogo 0.5s ease-in-out forwards;
+      cursor: pointer;
+      @include a.responsive(a.$third-breakpoint) {
+        width: 90%;
+        height: 90%;
+        margin: 0;
       }
-      &:active {
-        animation: clickEffect 0.3s ease;
+      @include a.responsive(a.$nav-fix-breakpoint-1) {
+        width: 12rem;
+        height: 12rem;
+      }
+      &--mobile {
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+      }
+    }
+    &-link {
+      @include a.responsive(a.$fourth-breakpoint) {
+        display: none;
+      }
+      &--mobile {
+        display: none;
+        @include a.responsive(a.$fourth-breakpoint) {
+          display: block;
+        }
       }
     }
   }
@@ -32,10 +64,28 @@
     font-family: a.$primary-font;
     font-weight: a.$font-weight-bold;
     font-size: 1.125rem;
+    @include a.responsive(a.$third-breakpoint) {
+      font-size: 1rem;
+      margin-left: -2rem;
+      white-space: nowrap;
+    }
+    @include a.responsive(a.$nav-fix-breakpoint-1) {
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+    }
   }
   &__item {
     margin: 0 1rem;
     padding-bottom: 0.25rem;
+    @include a.responsive(a.$nav-fix-breakpoint-2) {
+      margin: 0 0.5rem;
+    }
+    &:first-child {
+      @include a.responsive(a.$fourth-breakpoint) {
+        margin-left: -2rem;
+      }
+    }
+
     &:hover {
       cursor: pointer;
       color: a.$color-accent;
@@ -47,6 +97,9 @@
   }
   &__socials {
     @include a.center-flex;
+    @include a.responsive(a.$first-breakpoint) {
+      display: none;
+    }
     &-item {
       margin: 0 0.5rem;
     }

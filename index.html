@@ -17,6 +17,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="layout">
     <nav class="nav" aria-label="Główna nawigacja">
   <div class="nav__menu">
     
@@ -25,6 +26,13 @@
         <img
           class="nav__logo-image"
           src="src/icons/logo--nav.svg"
+          alt="Logo"
+        />
+      </a>
+        <a href="/" class="nav__logo-link nav__logo-link--mobile">
+        <img
+          class="nav__logo-image--mobile"
+          src="src/icons/Logo-mobile.png"
           alt="Logo"
         />
       </a>
@@ -105,8 +113,50 @@
 <button class="home-page__btn btn btn--green">IP serwera: example.com</button>
 </div>
   </section>
+ 
 </main>
-
+<footer class="footer">
+  <p class="footer__text txt--white">Serwer SlothSMP nie jest w żaden sposób powiązany z Mojang Studios</p>
+</footer>
+<ul class="socials socials__mobile-layout">
+        <li class="socials__item ">
+          <a href="#" class="socials__link">
+            <img
+              class="socials__icon"
+              src="src/icons/discord.svg"
+              alt="Discord"
+            />
+          </a>
+        </li>
+        <li class="socials__item ">
+          <a href="#" class="socials__link">
+            <img
+              class="socials__icon"
+              src="src/icons/tiktok.svg"
+              alt="TikTok"
+            />
+          </a>
+        </li>
+        <li class="socials__item ">
+          <a href="#" class="socials__link">
+            <img
+              class="socials__icon"
+              src="src/icons/instagram.svg"
+              alt="Instagram"
+            />
+          </a>
+        </li>
+        <li class="socials__item ">
+          <a href="#" class="socials__link">
+            <img
+              class="socials__icon"
+              src="src/icons/youtube.svg"
+              alt="YouTube"
+            />
+          </a>
+        </li>
+      </ul>
+</div>
   
 
     <script type="module" src="src/ts/app.ts"></script>

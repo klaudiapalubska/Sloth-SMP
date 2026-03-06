@@ -1,0 +1,25 @@
+@use "../abstracts/index" as a;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: a.$primary-color;
+  color: a.$color-base;
+  @include a.responsive(a.$second-breakpoint) {
+    font-size: 14px;
+  }
+  @include a.responsive(a.$breakpoint-small-devices) {
+    font-size: 12px;
+  }
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

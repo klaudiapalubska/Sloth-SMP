@@ -2,6 +2,7 @@
 $primary-color: #0b1220;
 $primary-color-2: #131b2c;
 $color-accent: #22c55e;
+$color-base: #ffffff;
 
 // ------------------------- Typography ----------------------------- //
 $font-size: 16px;
@@ -11,9 +12,18 @@ $font-weight: 500;
 $font-weight-bold: 700;
 
 //------------------------- Breakpoints -----------------------------//
+$first-breakpoint: 87.5em;
+$second-breakpoint: 49.375em;
+$third-breakpoint: 43.1875em;
+$fourth-breakpoint: 28.125em;
+$breakpoint-small-devices: 22.8125em;
+$nav-fix-breakpoint-1: 37.0625em;
+$nav-fix-breakpoint-2: 33.125em;
 
 //------------------------- Margins -----------------------------//
 $page-padding-horizontal: 15rem;
 $page-padding-top: 8rem;
+$page-padding-top-mobile: 4rem;
 $page-nav-padding: 2.5rem;
+$page-nav-padding-mobile: 2.5rem;
 $margin-web-gap: 5rem;

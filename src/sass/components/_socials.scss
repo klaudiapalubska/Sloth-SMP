@@ -1,10 +1,6 @@
 @use "../abstracts/index" as a;
 
 .socials {
-  &__item {
-  }
-  &__link {
-  }
   &__icon {
     width: auto;
     height: auto;
@@ -19,5 +15,27 @@
   & img {
     width: 1.5rem;
     height: 1.5rem;
+  }
+  &__mobile-layout {
+    display: none;
+    @include a.responsive(a.$first-breakpoint) {
+      @include a.center-flex;
+      flex-direction: column;
+      position: fixed;
+      top: 35%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: a.$primary-color-2;
+      height: 12rem;
+      width: 3rem;
+      border-top-left-radius: 1.25rem;
+      border-bottom-left-radius: 1.25rem;
+    }
+    & li:not(:first-child) {
+      margin-top: 0.8rem;
+    }
+    li:first-child {
+      margin-top: 0.4rem;
+    }
   }
 }

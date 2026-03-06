@@ -9,6 +9,14 @@
   font-size: 1rem;
   color: a.$primary-color;
   font-family: a.$primary-font;
+  &:hover {
+    cursor: pointer;
+    color: a.$color-base;
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+  &:active {
+    animation: clickEffect 0.3s ease;
+  }
   &--green {
     background-color: a.$color-accent;
     box-shadow: 0 0 0.625rem a.$color-accent;

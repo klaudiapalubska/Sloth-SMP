@@ -3,4 +3,15 @@
 section {
   background-color: a.$primary-color;
   padding: a.$page-padding-horizontal a.$page-padding-top;
+  @include a.responsive(a.$first-breakpoint) {
+    padding-top: a.$page-padding-top-mobile;
+    padding-bottom: a.$page-padding-top-mobile;
+  }
+  @include a.responsive(a.$third-breakpoint) {
+    padding: 3rem a.$page-padding-top-mobile;
+  }
+  @include a.responsive(28.125em) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
