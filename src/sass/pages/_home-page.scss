@@ -2,7 +2,6 @@
 
 .home-page {
   display: flex;
-  display: none !important; //!!!!!!!!!!!
   @include a.responsive(a.$first-breakpoint) {
     display: block;
   }

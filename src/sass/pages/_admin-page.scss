@@ -1,0 +1,77 @@
+@use "../abstracts/index" as a;
+
+.admin-page {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 6rem;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 4rem;
+
+    @include a.responsive(a.$first-breakpoint) {
+      width: 90%;
+    }
+
+    @include a.responsive(a.$nav-fix-breakpoint-1) {
+      margin-top: 2rem;
+      gap: 3rem;
+    }
+  }
+
+  &__member {
+    display: grid;
+    grid-template-columns: 18rem 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 4rem;
+
+    &:nth-child(even) {
+      grid-template-columns: 1fr 18rem;
+
+      .admin-page__img {
+        order: 2;
+      }
+    }
+
+    @include a.responsive(a.$nav-fix-breakpoint-1) {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2rem;
+
+      &:nth-child(even) {
+        grid-template-columns: 1fr;
+
+        .admin-page__img {
+          order: 0;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 18rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__text {
+    width: 90%;
+    margin: 0 auto;
+
+    @include a.responsive(a.$first-breakpoint) {
+      width: 100%;
+    }
+
+    p:nth-child(3) {
+      margin-top: 2rem;
+    }
+  }
+}

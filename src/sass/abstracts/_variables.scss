@@ -12,13 +12,15 @@ $font-weight: 500;
 $font-weight-bold: 700;
 
 //------------------------- Breakpoints -----------------------------//
-$first-breakpoint: 87.5em;
+$first-breakpoint: 87.5em; //1400px
 $second-breakpoint: 49.375em;
 $third-breakpoint: 43.1875em;
 $fourth-breakpoint: 28.125em;
 $breakpoint-small-devices: 22.8125em;
-$nav-fix-breakpoint-1: 37.0625em;
+$nav-fix-breakpoint-1: 37.0625em; //593px
 $nav-fix-breakpoint-2: 33.125em;
+$bp-socials: 66.875em; //1070px
+$contact-page-bp: 71.375em; //1142px
 
 //------------------------- Margins -----------------------------//
 $page-padding-horizontal: 15rem;

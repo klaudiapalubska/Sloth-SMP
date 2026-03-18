@@ -1,0 +1,28 @@
+@use "../abstracts/index" as a;
+
+.faq-page {
+  margin: 0 auto;
+  padding-top: 2rem;
+  width: 50%;
+  min-width: 8rem;
+  @include a.responsive(a.$first-breakpoint) {
+    width: 80%;
+    min-width: 10rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  & p {
+    margin-bottom: 0.5rem;
+
+    &:nth-child(odd) {
+      margin-bottom: 3rem;
+      @include a.responsive(a.$second-breakpoint) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

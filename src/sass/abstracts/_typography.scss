@@ -18,16 +18,29 @@
       font-size: 1rem;
     }
   }
+  &--huge-white {
+    font-size: 2rem;
+    font-family: a.$primary-font;
+    font-weight: 600;
+    @include m.responsive(28.125em) {
+      font-size: 1.5rem;
+    }
+  }
   &--white {
     font-family: a.$primary-font;
   }
   &--green {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: a.$primary-font;
     color: a.$color-accent;
     font-weight: 700;
     @include m.responsive(28.125em) {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
+}
+
+.highlight {
+  color: a.$color-accent;
+  border-bottom: 1px solid a.$color-accent;
 }

@@ -97,7 +97,7 @@
   }
   &__socials {
     @include a.center-flex;
-    @include a.responsive(a.$first-breakpoint) {
+    @include a.responsive(a.$bp-socials) {
       display: none;
     }
     &-item {
